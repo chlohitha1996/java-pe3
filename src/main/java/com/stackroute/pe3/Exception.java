@@ -2,7 +2,7 @@ package com.stackroute.pe3;
 
 public class Exception {
 
-    public String ArithmeticException(int a, int b) {
+    public String arithmeticException(int a, int b) {
         try {
             int c = a / b;  // cannot divide by zero
             System.out.println("Result = " + c);
@@ -12,7 +12,7 @@ public class Exception {
         return null;
     }
 
-    public String NegativeArraySizeException(int a) {
+    public String negativeArraySizeException(int a) {
         int arrSize = a;
         try {
             int[] myArray = new int[arrSize];
@@ -22,7 +22,7 @@ public class Exception {
         return null;
     }
 
-    public String NullPointerException(int b) {
+    public String nullPointerException(int b) {
 
 
         try {
@@ -35,7 +35,7 @@ public class Exception {
 
     }
 
-    public String ArrayIndexOutOfBound(int a) {
+    public String arrayIndexOutOfBound(int a) {
 
            int m[] = {40, 50, 60};
 
@@ -49,7 +49,7 @@ public class Exception {
 
         }
 
-    public String StringIndexOutOfBoundsException (int a) {
+    public String stringIndexOutOfBoundsException (int a) {
         String str = "hello";
     try
     {

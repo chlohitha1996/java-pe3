@@ -1,5 +1,7 @@
 package com.stackroute.pe3;
 
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -7,10 +9,22 @@ import static org.junit.Assert.*;
 public class StringObjectTest {
 
 
-    StringObject a=new StringObject();
-    @Test
+    StringObject a;
+    @Before
+    public void setUp() {
+        //arrange
+        a = new StringObject();
+    }
 
-    public  void compare()
+    @After
+    public void tearDown() {
+        //arrange
+        a = null;
+    }
+
+
+    @Test
+    public  void compare_ExpectedToReturnEqualOrNot()
     {
         String[] a1={"80","20","30"};
         String[] a2={"10","90","40"};
@@ -19,14 +33,14 @@ public class StringObjectTest {
 
     }
     @Test
-    public void Duplicate()
+    public void Duplicate_ExpectedToReturnContainsDuplicatesOrNot()
     {
         String[] a1={"63","63","15","90"};
         String s="duplicates found";
-        assertEquals(s,a.Duplicate(a1));
+        assertEquals(s,a.duplicate(a1));
     }
     @Test
-    public void append()
+    public void append_ExpectedToReturnAppendedString()
     {
         String[] a1={"17","18","19"};
         String[] a2={"20","30","40"};
@@ -35,7 +49,7 @@ public class StringObjectTest {
     }
 
     @Test
-    public void prepend()
+    public void prepend_ExpectedToReturnPrependedString()
     {
         String[] a1={"17","18","19"};
         String[] a2={"20","30","40"};

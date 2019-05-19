@@ -1,15 +1,26 @@
 package com.stackroute.pe3;
 
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
 public class OddEvenTest {
-    OddEven p=new OddEven();
+    OddEven p;
     int[] as={20,11,46};
+    @Before
+    public void setup() {
+        p=  new OddEven();
+    }
+
+    @After
+    public void tearDown() {
+        p = null;
+    }
 
     @Test
-    public void evenTest()
+    public void evenTestExpectedTODisplayEvenOrOdd()
     {
 
         String[] s=p.isEven(as);
@@ -20,15 +31,15 @@ public class OddEvenTest {
     }
 
     @Test
-    public void primeTest()
+    public void primeTestExpectedTODisplayPrimeOrNot()
     {
         int[] pr={40,37,11};
-        int[] s=p.isPrim(pr);
+        int[] s=p.isPrime(pr);
         int[] c={40};
         assertArrayEquals(c,s);
     }
     @Test
-    public void reverseTest()
+    public void reverseTestExpectedTODisplayReverse()
     {
         int[] s=p.isRev(as);
         int[] a={46,11,20};

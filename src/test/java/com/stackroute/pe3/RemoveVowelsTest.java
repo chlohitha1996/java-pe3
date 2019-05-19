@@ -1,5 +1,7 @@
 package com.stackroute.pe3;
 
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -8,9 +10,19 @@ public class RemoveVowelsTest {
 
     RemoveVowels oe;
 
+    @Before
+    public void setup() {
+        oe=  new RemoveVowels();
+    }
+
+    @After
+    public void tearDown() {
+        oe = null;
+    }
+
 
     @Test
-    public void removeVowels() {
+    public void removeVowels_ExpectedReturnStringsWithNoVowels() {
         oe = new RemoveVowels();
         String[] str2 = {"cello", "guitar", "violin", "double bass"};
 
@@ -19,11 +31,9 @@ public class RemoveVowelsTest {
 
         assertArrayEquals(str1, str);
 
-
     }
     @Test
-    public void AllVowels() {
-        oe = new RemoveVowels();
+    public void AllVowels_ExpectedNullString() {
         String[] str2 = {"aeiou", "AEIOU"};
 
         String[] str = oe.vowelsRemove(str2);
@@ -35,8 +45,8 @@ public class RemoveVowelsTest {
     }
 
     @Test
-    public void VowelsConsonants() {
-        oe = new RemoveVowels();
+    public void VowelsConsonants_ExpectedOnlyConsonants() {
+
         String[] str2 = {"d", "a", "e", "f"};
 
         String[] str = oe.vowelsRemove(str2);
@@ -47,24 +57,20 @@ public class RemoveVowelsTest {
 
     }
     @Test
-    public void nullPointer() {
-        oe = new RemoveVowels();
+    public void nullPointer_ExpectedReturnErrorMessage() {
+
         String s = "";
 
         String str = oe.nullPointerException(s);
         assertEquals("input string cannot be null",str);
 
 
-
-
     }
 
 
-
-
     @Test
-    public void numericalValues() {
-        oe = new RemoveVowels();
+    public void numericalValues_ExpectedReturnErrorMessage() {
+
         String s = "1234";
 
         String str = oe.numericalValues(s);
@@ -72,9 +78,6 @@ public class RemoveVowelsTest {
 
 
     }
-
-
-
 
 
 }

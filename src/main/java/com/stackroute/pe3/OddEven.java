@@ -2,7 +2,7 @@ package com.stackroute.pe3;
 
 public class OddEven {
 
-    public String[] isEven(int[] n) {
+    public String[] isEven(int[] n) { //To Check Even or not
         String[] s=new String[n.length];
         for(int i=0;i<n.length;i++)
             if (n[i] % 2 == 0) {
@@ -15,7 +15,7 @@ public class OddEven {
     }
 
 
-    public int[] isPrim(int n[])
+    public int[] isPrime(int n[]) //To check Prime or not
     {
         int count=0;
         for (int i=0;i<n.length;i++) {
