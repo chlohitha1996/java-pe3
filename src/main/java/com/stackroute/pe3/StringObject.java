@@ -1,7 +1,7 @@
 package com.stackroute.pe3;
 
 public class StringObject {
-    public String compare(String[] x,String[] y)
+    public String compare(String[] x,String[] y)  //String Comparision
     {
         String res="";
 
@@ -27,7 +27,7 @@ public class StringObject {
         return res;
     }
 
-    public String Duplicate(String[] x)
+    public String duplicate(String[] x) //Check Duplicates
     {
         String res="";
         for(int i=0;i<x.length;i++)
@@ -51,7 +51,7 @@ public class StringObject {
     }
 
 
-    public String[] append(String[] x,String[] y)
+    public String[] append(String[] x,String[] y) //Append method
     {
         String[] res=new String[x.length+1];
         for(int i=0;i<x.length;i++)
@@ -65,7 +65,7 @@ public class StringObject {
     }
 
 
-    public String[] prepend(String[] x,String[] y)
+    public String[] prepend(String[] x,String[] y) //Prepend method
     {
         String[] res=new String[x.length+1];
         String temp=y[y.length/2];

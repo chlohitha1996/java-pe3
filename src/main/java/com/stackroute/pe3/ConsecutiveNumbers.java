@@ -5,6 +5,8 @@ import java.lang.String;
 
 public class ConsecutiveNumbers{
 
+
+//To get Consecutive Numbers
     public String getConsecutiveNumbers(String s){
         String s1="consecutive";
         String s2="non consecutive";
@@ -20,6 +22,8 @@ public class ConsecutiveNumbers{
         }
         else return s2;
     }
+
+    //to get getNegativeConsecutiveNumbers
     public String getNegativeConsecutiveNumbers(String s){
         String s1="consecutive";
         String s2="non consecutive";
@@ -35,6 +39,9 @@ public class ConsecutiveNumbers{
         }
         else return s2;
     }
+
+
+    //To Check whether values are Consecutive or not
     public static boolean checkConsecutive(int arr[]){
 
         boolean result=true;
@@ -47,6 +54,8 @@ public class ConsecutiveNumbers{
         return true;
 
     }
+
+    //To reverse consecutive Numbers
     public String getReverseConsecutiveNumbers(String s){
         String s1="consecutive";
         String s2="non consecutive";
@@ -71,6 +80,8 @@ public class ConsecutiveNumbers{
             return s2;
         }
     }
+
+    //To check consecutiveNegative Values
     public static boolean checkConsecutiveNegative(int arr[]){
 
         boolean result=true;

@@ -1,7 +1,7 @@
 package com.stackroute.pe3;
 import java.util.*;
 public class StudentMarks {
-    public String isValid(int a)
+    public String isValid(int a)  //To Check the grade of each student
     {
         String res="";
         if ((a>=0) && (a<=100)) {

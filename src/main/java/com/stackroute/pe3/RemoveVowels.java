@@ -1,6 +1,6 @@
 package com.stackroute.pe3;
 
-public class RemoveVowels {
+public class RemoveVowels { //To remove all Voewls
     public String[] vowelsRemove(String[] instruments) {
 
 
@@ -12,28 +12,28 @@ public class RemoveVowels {
 
     }
 
-    public String nullPointerException(String s) {
+    public String nullPointerException(String s) { //To catch null pointer exception
 
-        String lohi="";
+        String string="";
         if (s == "") {
-            lohi = "input string cannot be null";
+            string = "input string cannot be null";
 
         }
 
-        return lohi;
+        return string;
     }
 
 
-
+//To check if numbers are passed in string
     public String numericalValues(String s){
-        String lohi="";
+        String string="";
         if (!s.matches("[a-zA-Z_]+")) {
 
-            lohi = "input string should have only characters";
+            string = "input string should have only characters";
 
         }
 
-return lohi;
+return string;
 
         }
     }
